@@ -10,12 +10,17 @@ from pathlib import Path
 dotenv_path = Path('/Users/ordogrul/Developer/VisualCode/askcompany/.env')
 load_dotenv(dotenv_path=dotenv_path)
 
+API_KEY = os.getenv('API_KEY'),
+ENVIRONMENT = os.getenv('ENVIRONMENT'),
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+
+print(API_KEY)
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 pinecone.init(
-    api_key=os.environ["API_KEY"],
-    environment=os.environ["ENVIRONMENT"]
+    api_key='API_KEY',
+    environment='ENVIRONMENT'
 )
 index = pinecone.Index('knowledgebot')
 
