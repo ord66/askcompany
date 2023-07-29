@@ -14,7 +14,6 @@ API_KEY = os.getenv('API_KEY'),
 ENVIRONMENT = os.getenv('ENVIRONMENT'),
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
-
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 pinecone.init(
