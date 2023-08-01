@@ -9,8 +9,8 @@ on:
   
 env:
   # Secrets
-  openai.api_key : ${{ secrets.OPENAI_API_KEY }}
-  # pinecone_api_key: '${{ secrets.PINECONE_API_KEY }}'
+  openai_api_key : ${{ secrets.OPENAI_API_KEY }}
+  pinecone_api_key: '${{ secrets.PINECONE_API_KEY }}'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
