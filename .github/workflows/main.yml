@@ -1,3 +1,4 @@
+name: key_test 
 on:
   pull_request:
     types: [opened, synchronize]
