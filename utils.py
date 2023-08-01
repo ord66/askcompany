@@ -20,7 +20,7 @@ pinecone.init(
     api_key='API_KEY',
     environment='ENVIRONMENT'
 )
-index = pinecone.Index('knowledgebot')
+index = pinecone.Index('omabot')
 
 
 def find_match(input):
