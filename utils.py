@@ -12,7 +12,8 @@ load_dotenv(dotenv_path=dotenv_path)
 
 API_KEY = os.getenv('API_KEY'),
 ENVIRONMENT = os.getenv('ENVIRONMENT'),
-openai_api_key = os.getenv('OPENAI_API_KEY')
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+#openai_api_key = os.getenv('OPENAI_API_KEY')
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
